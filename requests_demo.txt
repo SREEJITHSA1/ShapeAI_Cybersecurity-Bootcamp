@@ -1,0 +1,56 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "toc_visible": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Mnr0dE4GmnCQ"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "N13Q77QBmoq3"
+      },
+      "source": [
+        "# request_demo.py"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6uYzga5unEsD"
+      },
+      "source": [
+        "import requests\n",
+        "\n",
+        "r  = requests.get('https://imgs.xkcd.com/comics/python.png')\n",
+        "\n",
+        "with open('comic.png','wb') as f:\n",
+        "         f.write(r .content)"
+      ],
+      "execution_count": 1,
+      "outputs": []
+    }
+  ]
+}
